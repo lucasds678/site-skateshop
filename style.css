@@ -1,0 +1,297 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1c1c1c;
+    border-bottom: 2px solid #ff4500;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #ff4500;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ff4500;
+    background-color: rgba(255, 69, 0, 0.1);
+}
+
+.bx-menu {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .bx-menu {
+        display: block;
+    }
+}
+
+/* Botão padrão */
+.btn {
+    display: inline-block;
+    background: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #ff5733;
+}
+
+/* Seção Home */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+    background: url('IMG/bg_skate.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ff4500;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Seção Categorias */
+.categories {
+    padding: 50px;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+}
+
+.collections-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.collections-box {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.collections-box:hover {
+    transform: scale(1.05);
+    background: #ff4500;
+}
+
+.collections-box h3 {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.collections-box p {
+    color: #bbb;
+    margin: 10px 0;
+}
+
+/* Seção Produtos */
+.product-types {
+    padding: 50px 20px;
+    background: #121212;
+    text-align: center;
+}
+
+.product-types .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4500;
+    text-transform: uppercase;
+}
+
+.product-types .subheading {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-box {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+    background: #ff4500;
+}
+
+.product-box i {
+    font-size: 3rem;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.product-box h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.product-box p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Seção Contato */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #ff4500;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #fff;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4500;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #ff5733;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 30px;
+    background: #1c1c1c;
+    color: #fff;
+    border-top: 2px solid #ff4500;
+}
+
+/* Melhorias gerais */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
