@@ -14,6 +14,25 @@ body {
     color: #ccc; /* Cor da fonte alterada para cinza */
     line-height: 1.6;
     height: 100vh; /* Garante que o body tenha altura de 100% da tela */
+    position: relative;
+}
+
+/* Adicionando plano semitransparente atrás do conteúdo */
+.body-background-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com 50% de opacidade */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Fica atrás do conteúdo */
+}
+
+/* Content */
+.content {
+    background-color: rgba(255, 255, 255, 0.7); /* Branco com 70% de opacidade */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Header */
@@ -100,6 +119,19 @@ body {
     color: #ccc; /* Cor da fonte alterada para cinza */
     height: 100vh;
     text-align: center;
+    position: relative;
+}
+
+/* Adicionando overlay na seção home */
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com 50% de opacidade */
+    z-index: -1; /* Fica atrás do conteúdo */
 }
 
 .home-content {
