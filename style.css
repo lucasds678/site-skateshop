@@ -6,10 +6,14 @@
 }
 
 body {
+    background-image: url('IMG/logo.jpg'); /* Imagem de fundo */
+    background-size: cover;  /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
     font-family: 'Arial', sans-serif;
-    background: #121212;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     line-height: 1.6;
+    height: 100vh; /* Garante que o body tenha altura de 100% da tela */
 }
 
 /* Header */
@@ -39,7 +43,7 @@ body {
 }
 
 .navbar a {
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     text-decoration: none;
     transition: color 0.3s;
     padding: 5px 10px;
@@ -72,7 +76,7 @@ body {
 .btn {
     display: inline-block;
     background: #ff4500;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -93,7 +97,7 @@ body {
     justify-content: center;
     padding: 50px 30px;
     background: url('IMG/bg_skate.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     height: 100vh;
     text-align: center;
 }
@@ -119,7 +123,7 @@ body {
     padding: 50px;
     text-align: center;
     background: #121212;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
 }
 
 .collections-container {
@@ -146,7 +150,7 @@ body {
 }
 
 .collections-box h3 {
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     margin-top: 15px;
 }
 
@@ -204,7 +208,7 @@ body {
 }
 
 .product-box h3 {
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     margin-bottom: 10px;
 }
 
@@ -218,7 +222,7 @@ body {
     padding: 50px;
     text-align: center;
     background: #121212;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
 }
 
 .contact form {
@@ -245,7 +249,7 @@ body {
     border: none;
     border-radius: 5px;
     background: #1c1c1c;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
 }
 
 .contact button {
@@ -268,7 +272,7 @@ body {
     text-align: center;
     padding: 15px 30px;
     background: #1c1c1c;
-    color: #fff;
+    color: #ccc; /* Cor da fonte alterada para cinza */
     border-top: 2px solid #ff4500;
 }
 
